@@ -92,15 +92,8 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Patch server config
-        shell: pwsh
-        run: |
-          $configFile = "libs/hbb_common/src/config.rs"
-          $content = Get-Content $configFile -Raw
-          $content = $content -replace 'pub const RENDEZVOUS_SERVERS: &\[&str\] = &\["rs-ny.rustdesk.com"\];', 'pub const RENDEZVOUS_SERVERS: &[&str] = &["172.168.40.101"];'
-          $content = $content -replace 'pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp\+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";', 'pub const RS_PUB_KEY: &str = "u1VuoEWKlCgUo4BNDpOahqwceiM2xkPmE6c3xNHJoNI=";'
-          $content = $content -replace 'RwLock::new\("RustDesk"\.to_owned\(\)\)', 'RwLock::new("AysSoft Remote".to_owned())'
-          Set-Content $configFile $content
+      # Server config is now hardcoded in libs/hbb_common/src/config.rs
+      # No patching needed - all values (RENDEZVOUS_SERVERS, RS_PUB_KEY, APP_NAME, HARD_SETTINGS) are in source
 
       - name: Restore bridge files
         uses: actions/download-artifact@master

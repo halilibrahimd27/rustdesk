@@ -1046,7 +1046,8 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "https://admin.rustdesk.com".to_owned()
+    // AysSoft Remote: Use our own API server
+    "http://172.168.40.101:21114".to_owned()
 }
 
 #[inline]
