@@ -1047,7 +1047,7 @@ fn get_api_server_(api: String, custom: String) -> String {
         }
     }
     // AysSoft Remote: Use our own API server
-    "http://172.168.40.101:21114".to_owned()
+    "http://remote.aysbulut.com".to_owned()
 }
 
 #[inline]
