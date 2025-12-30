@@ -636,14 +636,14 @@ class _DesktopTabState extends State<DesktopTab>
                       child: Row(children: [
                         Offstage(
                           offstage: !showLogo,
-                          child: loadIcon(16),
+                          child: loadIcon(28),
                         ),
                         Offstage(
                             offstage: !showTitle,
                             child: const Text(
-                              "RustDesk",
-                              style: TextStyle(fontSize: 13),
-                            ).marginOnly(left: 2))
+                              "ayssoft",
+                              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                            ).marginOnly(left: 4))
                       ]).marginOnly(
                         left: 5,
                         right: 10,
