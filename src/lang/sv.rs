@@ -579,7 +579,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("2FA code must be 6 digits.", "Tvåstegsverifikationskoden måste vara 6 siffor."),
         ("Multiple Windows sessions found", "Flera Windows sessioner hittades"),
         ("Please select the session you want to connect to", "Välj den session du vill ansluta till"),
-        ("powered_by_me", ""),
+        ("powered_by_me", "ayssoft"),
         ("outgoing_only_desk_tip", ""),
         ("preset_password_warning", ""),
         ("Security Alert", "Säkerhetsvarning"),

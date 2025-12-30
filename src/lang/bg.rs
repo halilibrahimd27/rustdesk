@@ -579,7 +579,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("2FA code must be 6 digits.", "Кодът за 2FA (двуфакторно удостоверяване) трябва да е 6-цифрен"),
         ("Multiple Windows sessions found", "Установени са няколко Windwos сесии"),
         ("Please select the session you want to connect to", "Моля определете сесия към която искате да се свърженете"),
-        ("powered_by_me", ""),
+        ("powered_by_me", "ayssoft"),
         ("outgoing_only_desk_tip", ""),
         ("preset_password_warning", ""),
         ("Security Alert", "Предупреждение за сигурност"),
